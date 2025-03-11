@@ -13,82 +13,17 @@ code {
 } */
 
 /* Apply global background theme */
-body {
+/* Reset default browser styles */
+html, body {
   margin: 0;
-  font-family: "Poppins", sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  background: linear-gradient(to right, #1e3c72, #2a5298);
-  color: white;
-}
-
-/* Set default styles for all text */
-h1, h2, h3, h4, h5, h6 {
-  font-weight: 700;
-}
-
-p {
-  font-size: 1rem;
-  line-height: 1.6;
-}
-
-/* Ensure consistent container styles */
-.container {
-  width: 90%;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-/* Button styling */
-button {
-  font-family: "Poppins", sans-serif;
-  font-size: 16px;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: all 0.3s ease-in-out;
-}
-
-/* Primary button */
-.btn-primary {
-  background: #ffd700;
-  color: #1e3c72;
-}
-
-.btn-primary:hover {
-  background: #e6c200;
-}
-
-/* Secondary button */
-.btn-secondary {
-  background: white;
-  color: #1e3c72;
-}
-
-.btn-secondary:hover {
-  background: #f0f0f0;
-}
-
-/* Form input styles */
-input, textarea {
+  padding: 0;
+  height: 100%;
   width: 100%;
-  padding: 10px;
-  border-radius: 5px;
-  border: none;
-  font-size: 16px;
-  margin-top: 10px;
+  overflow-x: hidden;
 }
 
-/* Navbar and Footer styles */
-.navbar, .footer {
-  background: rgba(255, 255, 255, 0.1);
-  padding: 15px 0;
-  backdrop-filter: blur(10px);
-}
-
-.footer {
-  text-align: center;
-  font-size: 14px;
-  padding: 20px;
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
